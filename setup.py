@@ -211,9 +211,9 @@ install_requires = [
 ]
 
 setup(
-    name="diffusers",
+    name="diffusers_db",
     version="0.9.0",  # expected format is one of x.y.z.dev0, or x.y.z.rc1 or x.y.z (no to dashes, yes to dots)
-    description="Diffusers",
+    description="Diffusers_db",
     long_description=open("README.md", "r", encoding="utf-8").read(),
     long_description_content_type="text/markdown",
     keywords="deep learning",
