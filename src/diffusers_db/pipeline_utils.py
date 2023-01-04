@@ -540,6 +540,16 @@ class DiffusionPipeline(ConfigMixin):
 
         init_dict, unused_kwargs, _ = pipeline_class.extract_init_dict(config_dict, **kwargs)
 
+        # ethan hack: "diffusers" -> diffusers_db
+        _update_dict = {}
+        for _key, _val in init_dict.items():
+            if isinstance(_val, list) and len(_val) == 2:
+                _val0, _val1 = _val
+                if _val0 == "diffusers":
+                    _update_dict[_key] = ["diffusers_db", _val1]
+        for _key, val in _update_dict.items():
+            init_dict[_key] = val
+                    
         # define init kwargs
         init_kwargs = {k: init_dict.pop(k) for k in optional_kwargs if k in init_dict}
         init_kwargs = {**init_kwargs, **passed_pipe_kwargs}
