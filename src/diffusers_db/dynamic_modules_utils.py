@@ -171,7 +171,7 @@ def find_pipeline_class(loaded_module):
         if (
             cls_name != DiffusionPipeline.__name__
             and issubclass(cls, DiffusionPipeline)
-            and cls.__module__.split(".")[0] != "diffusers"
+            and cls.__module__.split(".")[0] != "diffusers_db"
         ):
             if pipeline_class is not None:
                 raise ValueError(

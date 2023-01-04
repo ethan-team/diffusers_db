@@ -45,7 +45,7 @@ logger = logging.get_logger(__name__)
 
 
 LOADABLE_CLASSES = {
-    "diffusers": {
+    "diffusers_db": {
         "FlaxModelMixin": ["save_pretrained", "from_pretrained"],
         "FlaxSchedulerMixin": ["save_pretrained", "from_pretrained"],
         "FlaxDiffusionPipeline": ["save_pretrained", "from_pretrained"],

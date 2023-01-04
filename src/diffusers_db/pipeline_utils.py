@@ -65,7 +65,7 @@ logger = logging.get_logger(__name__)
 
 
 LOADABLE_CLASSES = {
-    "diffusers": {
+    "diffusers_db": {
         "ModelMixin": ["save_pretrained", "from_pretrained"],
         "SchedulerMixin": ["save_pretrained", "from_pretrained"],
         "DiffusionPipeline": ["save_pretrained", "from_pretrained"],
