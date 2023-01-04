@@ -165,7 +165,7 @@ class DepsTableUpdateCommand(Command):
             "}",
             "",
         ]
-        target = "src/diffusers/dependency_versions_table.py"
+        target = "src/diffusers_db/dependency_versions_table.py"
         print(f"updating {target}")
         with open(target, "w", encoding="utf-8", newline="\n") as f:
             f.write("\n".join(content))
