@@ -3,7 +3,7 @@ import os
 
 import torch
 
-from diffusers import UNet1DModel
+from diffusers_db import UNet1DModel
 
 
 os.makedirs("hub/hopper-medium-v2/unet/hor32", exist_ok=True)

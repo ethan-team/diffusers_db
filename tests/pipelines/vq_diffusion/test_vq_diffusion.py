@@ -19,10 +19,10 @@ import unittest
 import numpy as np
 import torch
 
-from diffusers import Transformer2DModel, VQDiffusionPipeline, VQDiffusionScheduler, VQModel
-from diffusers.pipelines.vq_diffusion.pipeline_vq_diffusion import LearnedClassifierFreeSamplingEmbeddings
-from diffusers.utils import load_numpy, slow, torch_device
-from diffusers.utils.testing_utils import require_torch_gpu
+from diffusers_db import Transformer2DModel, VQDiffusionPipeline, VQDiffusionScheduler, VQModel
+from diffusers_db.pipelines.vq_diffusion.pipeline_vq_diffusion import LearnedClassifierFreeSamplingEmbeddings
+from diffusers_db.utils import load_numpy, slow, torch_device
+from diffusers_db.utils.testing_utils import require_torch_gpu
 from transformers import CLIPTextConfig, CLIPTextModel, CLIPTokenizer
 
 from ...test_pipelines_common import PipelineTesterMixin

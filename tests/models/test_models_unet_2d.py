@@ -20,8 +20,8 @@ import unittest
 
 import torch
 
-from diffusers import UNet2DConditionModel, UNet2DModel
-from diffusers.utils import (
+from diffusers_db import UNet2DConditionModel, UNet2DModel
+from diffusers_db.utils import (
     floats_tensor,
     load_hf_numpy,
     logging,

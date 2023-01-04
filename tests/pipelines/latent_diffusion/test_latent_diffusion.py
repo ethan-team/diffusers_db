@@ -18,8 +18,8 @@ import unittest
 import numpy as np
 import torch
 
-from diffusers import AutoencoderKL, DDIMScheduler, LDMTextToImagePipeline, UNet2DConditionModel
-from diffusers.utils.testing_utils import require_torch, slow, torch_device
+from diffusers_db import AutoencoderKL, DDIMScheduler, LDMTextToImagePipeline, UNet2DConditionModel
+from diffusers_db.utils.testing_utils import require_torch, slow, torch_device
 from transformers import CLIPTextConfig, CLIPTextModel, CLIPTokenizer
 
 from ...test_pipelines_common import PipelineTesterMixin

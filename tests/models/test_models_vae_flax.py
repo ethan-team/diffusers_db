@@ -1,8 +1,8 @@
 import unittest
 
-from diffusers import FlaxAutoencoderKL
-from diffusers.utils import is_flax_available
-from diffusers.utils.testing_utils import require_flax
+from diffusers_db import FlaxAutoencoderKL
+from diffusers_db.utils import is_flax_available
+from diffusers_db.utils.testing_utils import require_flax
 
 from ..test_modeling_common_flax import FlaxModelTesterMixin
 

@@ -12,12 +12,12 @@ import torch.nn.functional as F
 
 import PIL
 from accelerate import Accelerator
-from diffusers.models import AutoencoderKL, UNet2DConditionModel
-from diffusers.pipeline_utils import DiffusionPipeline
-from diffusers.pipelines.stable_diffusion import StableDiffusionPipelineOutput
-from diffusers.pipelines.stable_diffusion.safety_checker import StableDiffusionSafetyChecker
-from diffusers.schedulers import DDIMScheduler, LMSDiscreteScheduler, PNDMScheduler
-from diffusers.utils import logging
+from diffusers_db.models import AutoencoderKL, UNet2DConditionModel
+from diffusers_db.pipeline_utils import DiffusionPipeline
+from diffusers_db.pipelines.stable_diffusion import StableDiffusionPipelineOutput
+from diffusers_db.pipelines.stable_diffusion.safety_checker import StableDiffusionSafetyChecker
+from diffusers_db.schedulers import DDIMScheduler, LMSDiscreteScheduler, PNDMScheduler
+from diffusers_db.utils import logging
 
 # TODO: remove and import from diffusers.utils when the new version of diffusers is released
 from packaging import version

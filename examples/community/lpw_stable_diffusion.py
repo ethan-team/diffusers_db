@@ -6,13 +6,13 @@ import numpy as np
 import torch
 
 import PIL
-from diffusers.configuration_utils import FrozenDict
-from diffusers.models import AutoencoderKL, UNet2DConditionModel
-from diffusers.pipeline_utils import DiffusionPipeline
-from diffusers.pipelines.stable_diffusion import StableDiffusionPipelineOutput
-from diffusers.pipelines.stable_diffusion.safety_checker import StableDiffusionSafetyChecker
-from diffusers.schedulers import DDIMScheduler, LMSDiscreteScheduler, PNDMScheduler
-from diffusers.utils import deprecate, is_accelerate_available, logging
+from diffusers_db.configuration_utils import FrozenDict
+from diffusers_db.models import AutoencoderKL, UNet2DConditionModel
+from diffusers_db.pipeline_utils import DiffusionPipeline
+from diffusers_db.pipelines.stable_diffusion import StableDiffusionPipelineOutput
+from diffusers_db.pipelines.stable_diffusion.safety_checker import StableDiffusionSafetyChecker
+from diffusers_db.schedulers import DDIMScheduler, LMSDiscreteScheduler, PNDMScheduler
+from diffusers_db.utils import deprecate, is_accelerate_available, logging
 
 # TODO: remove and import from diffusers.utils when the new version of diffusers is released
 from packaging import version

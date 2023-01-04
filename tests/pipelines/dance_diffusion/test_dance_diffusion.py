@@ -19,9 +19,9 @@ import unittest
 import numpy as np
 import torch
 
-from diffusers import DanceDiffusionPipeline, IPNDMScheduler, UNet1DModel
-from diffusers.utils import slow, torch_device
-from diffusers.utils.testing_utils import require_torch_gpu
+from diffusers_db import DanceDiffusionPipeline, IPNDMScheduler, UNet1DModel
+from diffusers_db.utils import slow, torch_device
+from diffusers_db.utils.testing_utils import require_torch_gpu
 
 
 torch.backends.cuda.matmul.allow_tf32 = False

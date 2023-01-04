@@ -16,7 +16,7 @@
 import tempfile
 import unittest
 
-from diffusers import (
+from diffusers_db import (
     DDIMScheduler,
     DDPMScheduler,
     DPMSolverMultistepScheduler,
@@ -25,9 +25,9 @@ from diffusers import (
     PNDMScheduler,
     logging,
 )
-from diffusers.configuration_utils import ConfigMixin, register_to_config
-from diffusers.utils import deprecate
-from diffusers.utils.testing_utils import CaptureLogger
+from diffusers_db.configuration_utils import ConfigMixin, register_to_config
+from diffusers_db.utils import deprecate
+from diffusers_db.utils.testing_utils import CaptureLogger
 
 
 class SampleObject(ConfigMixin):

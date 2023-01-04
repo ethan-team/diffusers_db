@@ -16,14 +16,14 @@ import jax.numpy as jnp
 import optax
 import PIL
 import transformers
-from diffusers import (
+from diffusers_db import (
     FlaxAutoencoderKL,
     FlaxDDPMScheduler,
     FlaxPNDMScheduler,
     FlaxStableDiffusionPipeline,
     FlaxUNet2DConditionModel,
 )
-from diffusers.pipelines.stable_diffusion import FlaxStableDiffusionSafetyChecker
+from diffusers_db.pipelines.stable_diffusion import FlaxStableDiffusionSafetyChecker
 from flax import jax_utils
 from flax.training import train_state
 from flax.training.common_utils import shard

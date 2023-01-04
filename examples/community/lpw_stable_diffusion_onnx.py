@@ -6,11 +6,11 @@ import numpy as np
 import torch
 
 import PIL
-from diffusers.onnx_utils import OnnxRuntimeModel
-from diffusers.pipeline_utils import DiffusionPipeline
-from diffusers.pipelines.stable_diffusion import StableDiffusionPipelineOutput
-from diffusers.schedulers import DDIMScheduler, LMSDiscreteScheduler, PNDMScheduler
-from diffusers.utils import logging
+from diffusers_db.onnx_utils import OnnxRuntimeModel
+from diffusers_db.pipeline_utils import DiffusionPipeline
+from diffusers_db.pipelines.stable_diffusion import StableDiffusionPipelineOutput
+from diffusers_db.schedulers import DDIMScheduler, LMSDiscreteScheduler, PNDMScheduler
+from diffusers_db.utils import logging
 
 # TODO: remove and import from diffusers.utils when the new version of diffusers is released
 from packaging import version

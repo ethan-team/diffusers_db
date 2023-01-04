@@ -3,7 +3,7 @@ import argparse
 import torch
 
 import OmegaConf
-from diffusers import DDIMScheduler, LDMPipeline, UNetLDMModel, VQModel
+from diffusers_db import DDIMScheduler, LDMPipeline, UNetLDMModel, VQModel
 
 
 def convert_ldm_original(checkpoint_path, config_path, output_path):

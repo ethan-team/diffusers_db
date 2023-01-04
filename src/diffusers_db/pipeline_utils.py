@@ -24,7 +24,7 @@ from typing import Any, Dict, List, Optional, Union
 import numpy as np
 import torch
 
-import diffusers
+import diffusers_db
 import PIL
 from huggingface_hub import snapshot_download
 from packaging import version
@@ -139,7 +139,7 @@ class DiffusionPipeline(ConfigMixin):
 
     def register_modules(self, **kwargs):
         # import it here to avoid circular import
-        from diffusers import pipelines
+        from diffusers_db import pipelines
 
         for name, module in kwargs.items():
             # retrieve library
@@ -516,7 +516,7 @@ class DiffusionPipeline(ConfigMixin):
         if pipeline_class.__name__ == "StableDiffusionInpaintPipeline" and version.parse(
             version.parse(config_dict["_diffusers_version"]).base_version
         ) <= version.parse("0.5.1"):
-            from diffusers import StableDiffusionInpaintPipeline, StableDiffusionInpaintPipelineLegacy
+            from diffusers_db import StableDiffusionInpaintPipeline, StableDiffusionInpaintPipelineLegacy
 
             pipeline_class = StableDiffusionInpaintPipelineLegacy
 
@@ -560,7 +560,7 @@ class DiffusionPipeline(ConfigMixin):
             )
 
         # import it here to avoid circular import
-        from diffusers import pipelines
+        from diffusers_db import pipelines
 
         # 3. Load each module in the pipeline
         for name, (library_name, class_name) in init_dict.items():
@@ -636,11 +636,11 @@ class DiffusionPipeline(ConfigMixin):
 
                 if issubclass(class_obj, torch.nn.Module):
                     loading_kwargs["torch_dtype"] = torch_dtype
-                if issubclass(class_obj, diffusers.OnnxRuntimeModel):
+                if issubclass(class_obj, diffusers_db.OnnxRuntimeModel):
                     loading_kwargs["provider"] = provider
                     loading_kwargs["sess_options"] = sess_options
 
-                is_diffusers_model = issubclass(class_obj, diffusers.ModelMixin)
+                is_diffusers_model = issubclass(class_obj, diffusers_db.ModelMixin)
                 is_transformers_model = (
                     is_transformers_available()
                     and issubclass(class_obj, PreTrainedModel)

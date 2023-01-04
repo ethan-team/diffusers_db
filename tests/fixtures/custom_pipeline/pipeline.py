@@ -18,7 +18,7 @@ from typing import Optional, Tuple, Union
 
 import torch
 
-from diffusers.pipeline_utils import DiffusionPipeline, ImagePipelineOutput
+from diffusers_db.pipeline_utils import DiffusionPipeline, ImagePipelineOutput
 
 
 class CustomLocalPipeline(DiffusionPipeline):

@@ -17,9 +17,9 @@ import tempfile
 import unittest
 from typing import Dict, List, Tuple
 
-from diffusers import FlaxDDIMScheduler, FlaxDDPMScheduler, FlaxPNDMScheduler
-from diffusers.utils import deprecate, is_flax_available
-from diffusers.utils.testing_utils import require_flax
+from diffusers_db import FlaxDDIMScheduler, FlaxDDPMScheduler, FlaxPNDMScheduler
+from diffusers_db.utils import deprecate, is_flax_available
+from diffusers_db.utils.testing_utils import require_flax
 
 
 if is_flax_available():

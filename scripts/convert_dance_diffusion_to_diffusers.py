@@ -8,7 +8,7 @@ import torch
 from torch import nn
 
 from audio_diffusion.models import DiffusionAttnUnet1D
-from diffusers import DanceDiffusionPipeline, IPNDMScheduler, UNet1DModel
+from diffusers_db import DanceDiffusionPipeline, IPNDMScheduler, UNet1DModel
 from diffusion import sampling
 
 

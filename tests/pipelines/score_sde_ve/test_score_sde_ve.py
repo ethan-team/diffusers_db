@@ -18,8 +18,8 @@ import unittest
 import numpy as np
 import torch
 
-from diffusers import ScoreSdeVePipeline, ScoreSdeVeScheduler, UNet2DModel
-from diffusers.utils.testing_utils import require_torch, slow, torch_device
+from diffusers_db import ScoreSdeVePipeline, ScoreSdeVeScheduler, UNet2DModel
+from diffusers_db.utils.testing_utils import require_torch, slow, torch_device
 
 from ...test_pipelines_common import PipelineTesterMixin
 

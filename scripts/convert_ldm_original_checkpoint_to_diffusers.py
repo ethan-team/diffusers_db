@@ -19,7 +19,7 @@ import json
 
 import torch
 
-from diffusers import DDPMScheduler, LDMPipeline, UNet2DModel, VQModel
+from diffusers_db import DDPMScheduler, LDMPipeline, UNet2DModel, VQModel
 
 
 def shave_segments(path, n_shave_prefix_segments=1):

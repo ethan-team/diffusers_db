@@ -21,9 +21,9 @@ from typing import Dict, List, Tuple
 import numpy as np
 import torch
 
-from diffusers.modeling_utils import ModelMixin
-from diffusers.training_utils import EMAModel
-from diffusers.utils import torch_device
+from diffusers_db.modeling_utils import ModelMixin
+from diffusers_db.training_utils import EMAModel
+from diffusers_db.utils import torch_device
 
 
 class ModelTesterMixin:

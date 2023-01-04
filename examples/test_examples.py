@@ -24,7 +24,7 @@ import unittest
 from typing import List
 
 from accelerate.utils import write_basic_config
-from diffusers.utils import slow
+from diffusers_db.utils import slow
 
 
 logging.basicConfig(level=logging.DEBUG)

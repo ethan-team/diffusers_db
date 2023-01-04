@@ -1,7 +1,7 @@
 import d4rl  # noqa
 import gym
 import tqdm
-from diffusers.experimental import ValueGuidedRLPipeline
+from diffusers_db.experimental import ValueGuidedRLPipeline
 
 
 config = dict(

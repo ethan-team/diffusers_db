@@ -21,8 +21,8 @@ import torch
 from torch.onnx import export
 
 import onnx
-from diffusers import OnnxStableDiffusionPipeline, StableDiffusionPipeline
-from diffusers.onnx_utils import OnnxRuntimeModel
+from diffusers_db import OnnxStableDiffusionPipeline, StableDiffusionPipeline
+from diffusers_db.onnx_utils import OnnxRuntimeModel
 from packaging import version
 
 

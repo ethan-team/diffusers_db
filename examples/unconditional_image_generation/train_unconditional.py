@@ -11,10 +11,10 @@ import torch.nn.functional as F
 from accelerate import Accelerator
 from accelerate.logging import get_logger
 from datasets import load_dataset
-from diffusers import DDPMPipeline, DDPMScheduler, UNet2DModel, __version__
-from diffusers.optimization import get_scheduler
-from diffusers.training_utils import EMAModel
-from diffusers.utils import deprecate
+from diffusers_db import DDPMPipeline, DDPMScheduler, UNet2DModel, __version__
+from diffusers_db.optimization import get_scheduler
+from diffusers_db.training_utils import EMAModel
+from diffusers_db.utils import deprecate
 from huggingface_hub import HfFolder, Repository, whoami
 from packaging import version
 from torchvision.transforms import (

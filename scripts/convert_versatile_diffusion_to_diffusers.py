@@ -19,7 +19,7 @@ from argparse import Namespace
 
 import torch
 
-from diffusers import (
+from diffusers_db import (
     AutoencoderKL,
     DDIMScheduler,
     DPMSolverMultistepScheduler,
@@ -30,7 +30,7 @@ from diffusers import (
     UNet2DConditionModel,
     VersatileDiffusionPipeline,
 )
-from diffusers.pipelines.versatile_diffusion.modeling_text_unet import UNetFlatConditionModel
+from diffusers_db.pipelines.versatile_diffusion.modeling_text_unet import UNetFlatConditionModel
 from transformers import (
     CLIPFeatureExtractor,
     CLIPTextModelWithProjection,

@@ -5,7 +5,7 @@ import torch
 from torch import nn
 from torch.nn import functional as F
 
-from diffusers import (
+from diffusers_db import (
     AutoencoderKL,
     DDIMScheduler,
     DiffusionPipeline,
@@ -13,7 +13,7 @@ from diffusers import (
     PNDMScheduler,
     UNet2DConditionModel,
 )
-from diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion import StableDiffusionPipelineOutput
+from diffusers_db.pipelines.stable_diffusion.pipeline_stable_diffusion import StableDiffusionPipelineOutput
 from torchvision import transforms
 from transformers import CLIPFeatureExtractor, CLIPModel, CLIPTextModel, CLIPTokenizer
 

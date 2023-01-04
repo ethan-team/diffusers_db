@@ -23,9 +23,9 @@ from torchvision import transforms
 from tqdm.auto import tqdm
 from transformers import CLIPTextModel, CLIPTokenizer
 
-from diffusers import (AutoencoderKL, DDIMScheduler, DDPMScheduler,
+from diffusers_db import (AutoencoderKL, DDIMScheduler, DDPMScheduler,
                        StableDiffusionInpaintPipeline, UNet2DConditionModel)
-from diffusers.optimization import get_scheduler
+from diffusers_db.optimization import get_scheduler
 
 torch.backends.cudnn.benchmark = True
 

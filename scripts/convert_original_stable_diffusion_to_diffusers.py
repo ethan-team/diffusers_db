@@ -27,7 +27,7 @@ except ImportError:
         "OmegaConf is required to convert the LDM checkpoints. Please install it with `pip install OmegaConf`."
     )
 
-from diffusers import (
+from diffusers_db import (
     AutoencoderKL,
     DDIMScheduler,
     DPMSolverMultistepScheduler,
@@ -39,8 +39,8 @@ from diffusers import (
     StableDiffusionPipeline,
     UNet2DConditionModel,
 )
-from diffusers.pipelines.latent_diffusion.pipeline_latent_diffusion import LDMBertConfig, LDMBertModel
-from diffusers.pipelines.stable_diffusion import StableDiffusionSafetyChecker
+from diffusers_db.pipelines.latent_diffusion.pipeline_latent_diffusion import LDMBertConfig, LDMBertModel
+from diffusers_db.pipelines.stable_diffusion import StableDiffusionSafetyChecker
 from transformers import AutoFeatureExtractor, BertTokenizerFast, CLIPTextModel, CLIPTokenizer
 
 

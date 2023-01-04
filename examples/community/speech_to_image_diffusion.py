@@ -3,7 +3,7 @@ from typing import Callable, List, Optional, Union
 
 import torch
 
-from diffusers import (
+from diffusers_db import (
     AutoencoderKL,
     DDIMScheduler,
     DiffusionPipeline,
@@ -11,9 +11,9 @@ from diffusers import (
     PNDMScheduler,
     UNet2DConditionModel,
 )
-from diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion import StableDiffusionPipelineOutput
-from diffusers.pipelines.stable_diffusion.safety_checker import StableDiffusionSafetyChecker
-from diffusers.utils import logging
+from diffusers_db.pipelines.stable_diffusion.pipeline_stable_diffusion import StableDiffusionPipelineOutput
+from diffusers_db.pipelines.stable_diffusion.safety_checker import StableDiffusionSafetyChecker
+from diffusers_db.utils import logging
 from transformers import (
     CLIPFeatureExtractor,
     CLIPTextModel,

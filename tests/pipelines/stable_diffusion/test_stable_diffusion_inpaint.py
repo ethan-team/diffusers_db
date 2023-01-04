@@ -20,7 +20,7 @@ import unittest
 import numpy as np
 import torch
 
-from diffusers import (
+from diffusers_db import (
     AutoencoderKL,
     LMSDiscreteScheduler,
     PNDMScheduler,
@@ -29,9 +29,9 @@ from diffusers import (
     UNet2DModel,
     VQModel,
 )
-from diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion_inpaint import prepare_mask_and_masked_image
-from diffusers.utils import floats_tensor, load_image, load_numpy, slow, torch_device
-from diffusers.utils.testing_utils import require_torch_gpu
+from diffusers_db.pipelines.stable_diffusion.pipeline_stable_diffusion_inpaint import prepare_mask_and_masked_image
+from diffusers_db.utils import floats_tensor, load_image, load_numpy, slow, torch_device
+from diffusers_db.utils.testing_utils import require_torch_gpu
 from PIL import Image
 from transformers import CLIPTextConfig, CLIPTextModel, CLIPTokenizer
 

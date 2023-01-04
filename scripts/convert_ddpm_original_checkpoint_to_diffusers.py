@@ -3,7 +3,7 @@ import json
 
 import torch
 
-from diffusers import AutoencoderKL, DDPMPipeline, DDPMScheduler, UNet2DModel, VQModel
+from diffusers_db import AutoencoderKL, DDPMPipeline, DDPMScheduler, UNet2DModel, VQModel
 
 
 def shave_segments(path, n_shave_prefix_segments=1):

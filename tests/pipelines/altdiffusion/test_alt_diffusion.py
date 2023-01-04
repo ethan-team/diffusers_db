@@ -20,13 +20,13 @@ import unittest
 import numpy as np
 import torch
 
-from diffusers import AltDiffusionPipeline, AutoencoderKL, DDIMScheduler, PNDMScheduler, UNet2DConditionModel
-from diffusers.pipelines.alt_diffusion.modeling_roberta_series import (
+from diffusers_db import AltDiffusionPipeline, AutoencoderKL, DDIMScheduler, PNDMScheduler, UNet2DConditionModel
+from diffusers_db.pipelines.alt_diffusion.modeling_roberta_series import (
     RobertaSeriesConfig,
     RobertaSeriesModelWithTransformation,
 )
-from diffusers.utils import floats_tensor, slow, torch_device
-from diffusers.utils.testing_utils import require_torch_gpu
+from diffusers_db.utils import floats_tensor, slow, torch_device
+from diffusers_db.utils.testing_utils import require_torch_gpu
 from transformers import XLMRobertaTokenizer
 
 from ...test_pipelines_common import PipelineTesterMixin

@@ -16,8 +16,8 @@ from typing import Callable, List, Optional, Tuple, Union
 
 import torch
 
-from diffusers import Transformer2DModel, VQModel
-from diffusers.schedulers.scheduling_vq_diffusion import VQDiffusionScheduler
+from diffusers_db import Transformer2DModel, VQModel
+from diffusers_db.schedulers.scheduling_vq_diffusion import VQDiffusionScheduler
 from transformers import CLIPTextModel, CLIPTokenizer
 
 from ...configuration_utils import ConfigMixin, register_to_config

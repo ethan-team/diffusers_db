@@ -15,8 +15,8 @@
 
 import unittest
 
-from diffusers import __version__
-from diffusers.utils import deprecate
+from diffusers_db import __version__
+from diffusers_db.utils import deprecate
 
 
 class DeprecateTester(unittest.TestCase):

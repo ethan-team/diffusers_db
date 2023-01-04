@@ -20,8 +20,8 @@ import unittest
 import numpy as np
 import torch
 
-from diffusers import VersatileDiffusionPipeline
-from diffusers.utils.testing_utils import load_image, require_torch_gpu, slow, torch_device
+from diffusers_db import VersatileDiffusionPipeline
+from diffusers_db.utils.testing_utils import load_image, require_torch_gpu, slow, torch_device
 
 from ...test_pipelines_common import PipelineTesterMixin
 

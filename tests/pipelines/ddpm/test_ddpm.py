@@ -18,9 +18,9 @@ import unittest
 import numpy as np
 import torch
 
-from diffusers import DDPMPipeline, DDPMScheduler, UNet2DModel
-from diffusers.utils import deprecate
-from diffusers.utils.testing_utils import require_torch_gpu, slow, torch_device
+from diffusers_db import DDPMPipeline, DDPMScheduler, UNet2DModel
+from diffusers_db.utils import deprecate
+from diffusers_db.utils.testing_utils import require_torch_gpu, slow, torch_device
 
 from ...test_pipelines_common import PipelineTesterMixin
 

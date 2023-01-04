@@ -1,4 +1,4 @@
-from diffusers.utils.testing_utils import require_torch
+from diffusers_db.utils.testing_utils import require_torch
 
 
 @require_torch

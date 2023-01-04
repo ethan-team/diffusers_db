@@ -17,8 +17,8 @@ import unittest
 
 import numpy as np
 
-from diffusers import OnnxStableDiffusionInpaintPipelineLegacy
-from diffusers.utils.testing_utils import (
+from diffusers_db import OnnxStableDiffusionInpaintPipelineLegacy
+from diffusers_db.utils.testing_utils import (
     is_onnx_available,
     load_image,
     load_numpy,

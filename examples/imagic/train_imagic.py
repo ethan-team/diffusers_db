@@ -11,7 +11,7 @@ import torch.utils.checkpoint
 from accelerate import Accelerator
 from accelerate.logging import get_logger
 from accelerate.utils import set_seed
-from diffusers import AutoencoderKL, DDPMScheduler, StableDiffusionPipeline, UNet2DConditionModel
+from diffusers_db import AutoencoderKL, DDPMScheduler, StableDiffusionPipeline, UNet2DConditionModel
 from huggingface_hub import HfFolder, Repository, whoami
 from PIL import Image
 import numpy as np

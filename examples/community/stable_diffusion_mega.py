@@ -3,7 +3,7 @@ from typing import Any, Callable, Dict, List, Optional, Union
 import torch
 
 import PIL.Image
-from diffusers import (
+from diffusers_db import (
     AutoencoderKL,
     DDIMScheduler,
     DiffusionPipeline,
@@ -14,9 +14,9 @@ from diffusers import (
     StableDiffusionPipeline,
     UNet2DConditionModel,
 )
-from diffusers.configuration_utils import FrozenDict
-from diffusers.pipelines.stable_diffusion.safety_checker import StableDiffusionSafetyChecker
-from diffusers.utils import deprecate, logging
+from diffusers_db.configuration_utils import FrozenDict
+from diffusers_db.pipelines.stable_diffusion.safety_checker import StableDiffusionSafetyChecker
+from diffusers_db.utils import deprecate, logging
 from transformers import CLIPFeatureExtractor, CLIPTextModel, CLIPTokenizer
 
 

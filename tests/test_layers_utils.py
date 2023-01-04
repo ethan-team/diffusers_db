@@ -20,10 +20,10 @@ import numpy as np
 import torch
 from torch import nn
 
-from diffusers.models.attention import GEGLU, AdaLayerNorm, ApproximateGELU, AttentionBlock, Transformer2DModel
-from diffusers.models.embeddings import get_timestep_embedding
-from diffusers.models.resnet import Downsample2D, Upsample2D
-from diffusers.utils import torch_device
+from diffusers_db.models.attention import GEGLU, AdaLayerNorm, ApproximateGELU, AttentionBlock, Transformer2DModel
+from diffusers_db.models.embeddings import get_timestep_embedding
+from diffusers_db.models.resnet import Downsample2D, Upsample2D
+from diffusers_db.utils import torch_device
 
 
 torch.backends.cuda.matmul.allow_tf32 = False

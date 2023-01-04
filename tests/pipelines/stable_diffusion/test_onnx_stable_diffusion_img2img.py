@@ -17,8 +17,8 @@ import unittest
 
 import numpy as np
 
-from diffusers import LMSDiscreteScheduler, OnnxStableDiffusionImg2ImgPipeline
-from diffusers.utils.testing_utils import is_onnx_available, load_image, require_onnxruntime, require_torch_gpu, slow
+from diffusers_db import LMSDiscreteScheduler, OnnxStableDiffusionImg2ImgPipeline
+from diffusers_db.utils.testing_utils import is_onnx_available, load_image, require_onnxruntime, require_torch_gpu, slow
 
 from ...test_pipelines_onnx_common import OnnxPipelineTesterMixin
 

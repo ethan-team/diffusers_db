@@ -19,9 +19,9 @@ import unittest
 import numpy as np
 import torch
 
-from diffusers import DDIMScheduler, LDMSuperResolutionPipeline, UNet2DModel, VQModel
-from diffusers.utils import PIL_INTERPOLATION, floats_tensor, load_image, slow, torch_device
-from diffusers.utils.testing_utils import require_torch
+from diffusers_db import DDIMScheduler, LDMSuperResolutionPipeline, UNet2DModel, VQModel
+from diffusers_db.utils import PIL_INTERPOLATION, floats_tensor, load_image, slow, torch_device
+from diffusers_db.utils.testing_utils import require_torch
 
 from ...test_pipelines_common import PipelineTesterMixin
 
